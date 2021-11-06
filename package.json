@@ -1,18 +1,26 @@
 {
-  "name": "angular.io-example",
+  "name": "Trabajo05-Angular",
   "version": "0.0.0",
   "description": "Example project from an angular.io guide.",
   "license": "MIT",
   "scripts": {
+    "heroku-postbuild": "ng build --prod",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js"
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "e2e": "ng e2e"
   },
+  "engines": {
+    "node": "14.18.1",
+    "npm": "6.14.15"
+  },
+
   "private": true,
   "dependencies": {
+    "@angular/cli": "~13.0.0-rc.0",
+    "@angular/compiler-cli": "~13.0.0-next.0",
     "@angular/animations": "~13.0.0-next.0",
     "@angular/common": "~13.0.0-next.0",
     "@angular/compiler": "~13.0.0-next.0",
@@ -24,7 +32,8 @@
     "angular-in-memory-web-api": "~0.11.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "typescript": "~4.4.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.0.0-rc.0",
